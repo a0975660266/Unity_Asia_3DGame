@@ -299,7 +299,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &253320245
 RectTransform:
   m_ObjectHideFlags: 0
@@ -310,9 +310,11 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1381921740}
+  - {fileID: 959385543}
   m_Father: {fileID: 1899886855}
-  m_RootOrder: 2
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -5289,12 +5291,12 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1899886855}
+  m_Father: {fileID: 253320245}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -0.172}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.000015497, y: -215.99998}
+  m_AnchoredPosition: {x: 0.000015497, y: -21.99997}
   m_SizeDelta: {x: 506.47147, y: 115.50983}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &959385544
@@ -5603,7 +5605,10 @@ MonoBehaviour:
   data: {fileID: 11400000, guid: 35c49fd5f8240514ab6bc4bfda3f0898, type: 2}
   dialog: {fileID: 253320244}
   textContent: {fileID: 959385544}
+  textName: {fileID: 1381921741}
+  interval: 0.1
   playerInArea: 0
+  state: 0
 --- !u!54 &1256998508
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5649,12 +5654,12 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1899886855}
+  m_Father: {fileID: 253320245}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -275.00003, y: -134.742}
+  m_AnchoredPosition: {x: -274.99997, y: 59.257996}
   m_SizeDelta: {x: 428.3137, y: 118.5159}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1381921741
@@ -5895,8 +5900,6 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
-  - {fileID: 1381921740}
-  - {fileID: 959385543}
   - {fileID: 253320245}
   m_Father: {fileID: 0}
   m_RootOrder: 7
